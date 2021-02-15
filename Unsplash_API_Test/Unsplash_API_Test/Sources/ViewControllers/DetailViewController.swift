@@ -18,8 +18,10 @@ class DetailViewController: UIViewController {
     
     private var API_KEY: String!
     var fullImageURL: URL?
+    var fullImageString: String!
     var photoID: String!
     var singlePhotoData: PhotoSingleResponse!
+    var colors: [Color] = []
     
     // MARK: - Life Cycle
     
@@ -30,6 +32,7 @@ class DetailViewController: UIViewController {
 
         fullImage.kf.setImage(with: fullImageURL)
         fetchSinglePhoto(photoID: photoID)
+//        fetchPhotoColor(photoURL: fullImageString)
     }
     
     // MARK: - Custom Function
@@ -65,6 +68,26 @@ class DetailViewController: UIViewController {
         }
     }
     
+    func fetchPhotoColor(photoURL: String) {
+        PhotoColorPickService.shared.getPhotoColor(image_url: photoURL) { (result) -> (Void) in
+            switch result {
+            case .success(let data):
+                if let response = data as? ColorResponse {
+                    print("🔥 Color - \(response)")
+                }
+            case .requestErr(let msg):
+                print(msg)
+            case .pathErr:
+                print("path Err")
+            case .serverErr:
+                print("server Err")
+            case .networkFail:
+                print("network Fail")
+            }
+        }
+    }
+
+    
     /// Info.plist에 있는 API_KEY값 가져오기
     func fetchAPIKey(){
         if let infoDic: [String:Any] = Bundle.main.infoDictionary {
@@ -80,6 +103,12 @@ class DetailViewController: UIViewController {
     
     @IBAction func downloadButtonClicked(_ sender: Any) {
         downloadImage(url: self.fullImageURL!)
-        self.dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func colorButtonClicked(_ sender: Any) {
+        let colorViewController = PhotoColorViewController(nibName: "PhotoColorViewController", bundle: nil)
+        colorViewController.photoURLString = fullImageString
+        self.present(colorViewController, animated: true, completion: nil)
+    }
+    
 }

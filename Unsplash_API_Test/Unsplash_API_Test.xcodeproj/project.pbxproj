@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		14B660B77A746EEEFAAD55EB /* Pods_Unsplash_API_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3725A81E152083CCD6576E02 /* Pods_Unsplash_API_Test.framework */; };
 		BD0D16FD25DA8C0700544FDF /* PhotoRandomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D16FC25DA8C0700544FDF /* PhotoRandomService.swift */; };
+		BD0D170025DAA8E400544FDF /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D16FF25DAA8E400544FDF /* Secrets.swift */; };
+		BD0D170425DAAAA100544FDF /* ColorPickData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D170325DAAAA100544FDF /* ColorPickData.swift */; };
+		BD0D170825DAAB6000544FDF /* PhotoColorPickService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D170725DAAB6000544FDF /* PhotoColorPickService.swift */; };
+		BD0D170C25DABA2900544FDF /* PhotoColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D170B25DABA2900544FDF /* PhotoColorViewController.swift */; };
+		BD0D171A25DABE0A00544FDF /* PhotoColorCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D171825DABE0A00544FDF /* PhotoColorCVC.swift */; };
+		BD0D171B25DABE0A00544FDF /* PhotoColorCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD0D171925DABE0A00544FDF /* PhotoColorCVC.xib */; };
+		BD0D172325DABFAC00544FDF /* PhotoColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD0D172225DABFAC00544FDF /* PhotoColorViewController.xib */; };
 		BD51F5F825D112C500493CB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51F5F725D112C500493CB5 /* AppDelegate.swift */; };
 		BD51F5FA25D112C500493CB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51F5F925D112C500493CB5 /* SceneDelegate.swift */; };
 		BD51F5FF25D112C500493CB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD51F5FD25D112C500493CB5 /* Main.storyboard */; };
@@ -41,6 +48,13 @@
 		84DBF61E0FF01D92F2E11548 /* Pods-Unsplash_API_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unsplash_API_Test.debug.xcconfig"; path = "Target Support Files/Pods-Unsplash_API_Test/Pods-Unsplash_API_Test.debug.xcconfig"; sourceTree = "<group>"; };
 		BB976C1D548F0B3C9C372A57 /* Pods-Unsplash_API_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unsplash_API_Test.release.xcconfig"; path = "Target Support Files/Pods-Unsplash_API_Test/Pods-Unsplash_API_Test.release.xcconfig"; sourceTree = "<group>"; };
 		BD0D16FC25DA8C0700544FDF /* PhotoRandomService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRandomService.swift; sourceTree = "<group>"; };
+		BD0D16FF25DAA8E400544FDF /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		BD0D170325DAAAA100544FDF /* ColorPickData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickData.swift; sourceTree = "<group>"; };
+		BD0D170725DAAB6000544FDF /* PhotoColorPickService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoColorPickService.swift; sourceTree = "<group>"; };
+		BD0D170B25DABA2900544FDF /* PhotoColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoColorViewController.swift; sourceTree = "<group>"; };
+		BD0D171825DABE0A00544FDF /* PhotoColorCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoColorCVC.swift; sourceTree = "<group>"; };
+		BD0D171925DABE0A00544FDF /* PhotoColorCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoColorCVC.xib; sourceTree = "<group>"; };
+		BD0D172225DABFAC00544FDF /* PhotoColorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoColorViewController.xib; sourceTree = "<group>"; };
 		BD51F5F425D112C500493CB5 /* Unsplash_API_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unsplash_API_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD51F5F725D112C500493CB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD51F5F925D112C500493CB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +111,14 @@
 				BB976C1D548F0B3C9C372A57 /* Pods-Unsplash_API_Test.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD0D170225DAAA8600544FDF /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				BD0D170325DAAAA100544FDF /* ColorPickData.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 		BD51F5EB25D112C500493CB5 = {
@@ -159,6 +181,7 @@
 				BD51F61E25D1349400493CB5 /* Photos */,
 				BD51F61825D12B5000493CB5 /* APIConstants.swift */,
 				BD51F61B25D131D900493CB5 /* NetworkResult.swift */,
+				BD0D16FF25DAA8E400544FDF /* Secrets.swift */,
 			);
 			path = APIServices;
 			sourceTree = "<group>";
@@ -180,6 +203,7 @@
 				BD51F61525D127D200493CB5 /* MainViewController.swift */,
 				BDF90D1E25D801CC0076793B /* ProfileViewController.swift */,
 				BDF90D4F25D8513A0076793B /* DetailViewController.swift */,
+				BD0D170B25DABA2900544FDF /* PhotoColorViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,6 +211,7 @@
 		BD51F61225D1275700493CB5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BD0D170225DAAA8600544FDF /* Color */,
 				BDF90D2425D803480076793B /* User */,
 				BDF90D2225D803410076793B /* Photos */,
 			);
@@ -207,6 +232,7 @@
 				BD51F62E25D13E4400493CB5 /* PhotoSearchService.swift */,
 				BDF90D4C25D8496D0076793B /* PhotoSingleService.swift */,
 				BD0D16FC25DA8C0700544FDF /* PhotoRandomService.swift */,
+				BD0D170725DAAB6000544FDF /* PhotoColorPickService.swift */,
 			);
 			path = Photos;
 			sourceTree = "<group>";
@@ -216,6 +242,8 @@
 			children = (
 				BD6B140925D17A41001CE429 /* PhotoCVC.swift */,
 				BDF90D3E25D827610076793B /* LikedPhotoCVC.swift */,
+				BD0D171825DABE0A00544FDF /* PhotoColorCVC.swift */,
+				BD0D171925DABE0A00544FDF /* PhotoColorCVC.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -258,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				BDF90D5325D852640076793B /* DetailViewController.xib */,
+				BD0D172225DABFAC00544FDF /* PhotoColorViewController.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -322,9 +351,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD51F60425D112C700493CB5 /* LaunchScreen.storyboard in Resources */,
+				BD0D172325DABFAC00544FDF /* PhotoColorViewController.xib in Resources */,
 				BD51F60125D112C700493CB5 /* Assets.xcassets in Resources */,
 				BD51F5FF25D112C500493CB5 /* Main.storyboard in Resources */,
 				BDF90D5425D852640076793B /* DetailViewController.xib in Resources */,
+				BD0D171B25DABE0A00544FDF /* PhotoColorCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0D170425DAAAA100544FDF /* ColorPickData.swift in Sources */,
 				BDD1095425D9752C00BED4CA /* LoginViewController.swift in Sources */,
 				BDF90D4D25D8496D0076793B /* PhotoSingleService.swift in Sources */,
 				BD51F61925D12B5000493CB5 /* APIConstants.swift in Sources */,
@@ -385,6 +417,7 @@
 				BD6B140A25D17A41001CE429 /* PhotoCVC.swift in Sources */,
 				BDF90D4A25D847090076793B /* PhotoSingleData.swift in Sources */,
 				BD51F61C25D131D900493CB5 /* NetworkResult.swift in Sources */,
+				BD0D170C25DABA2900544FDF /* PhotoColorViewController.swift in Sources */,
 				BDF90D5025D8513A0076793B /* DetailViewController.swift in Sources */,
 				BDF90D2925D8047D0076793B /* UserInfoService.swift in Sources */,
 				BDD1095A25D97E5E00BED4CA /* TabBarController.swift in Sources */,
@@ -393,9 +426,12 @@
 				BD51F61625D127D200493CB5 /* MainViewController.swift in Sources */,
 				BDF90D1F25D801CC0076793B /* ProfileViewController.swift in Sources */,
 				BD0D16FD25DA8C0700544FDF /* PhotoRandomService.swift in Sources */,
+				BD0D170025DAA8E400544FDF /* Secrets.swift in Sources */,
 				BD51F5F825D112C500493CB5 /* AppDelegate.swift in Sources */,
+				BD0D171A25DABE0A00544FDF /* PhotoColorCVC.swift in Sources */,
 				BD51F62F25D13E4400493CB5 /* PhotoSearchService.swift in Sources */,
 				BD51F62C25D13D6800493CB5 /* PhotoSearchData.swift in Sources */,
+				BD0D170825DAAB6000544FDF /* PhotoColorPickService.swift in Sources */,
 				BD51F5FA25D112C500493CB5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

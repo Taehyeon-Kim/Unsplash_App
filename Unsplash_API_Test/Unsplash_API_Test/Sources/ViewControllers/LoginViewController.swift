@@ -32,10 +32,10 @@ class LoginViewController: UIViewController {
                 print(error)
             }
            else {
-            print("loginWithKakaoAccount() success.")
+//            print("loginWithKakaoAccount() success.")
             
             //do something
-            _ = oauthToken
+//            _ = oauthToken
             
             //화면 전환
             let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)

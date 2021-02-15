@@ -158,6 +158,7 @@ extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDel
             detailVC.setData(url: url)
         }
         detailVC.modalPresentationStyle = .fullScreen
+        detailVC.fullImageString = userLikedPhotos[indexPath.row].urls.full
         detailVC.photoID = userLikedPhotos[indexPath.row].id
         self.present(detailVC, animated: true, completion: nil)
     }

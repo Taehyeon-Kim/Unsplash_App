@@ -43,7 +43,6 @@ class MainViewController: UIViewController {
             switch result {
             case .success(let data):
                 if let response = data as? [Result] {
-                    print("😁 랜덤 사진 가져오기 성공! - \(response)")
                     self.photoData = response
                     self.collectionView.reloadData()
                 }
@@ -90,6 +89,25 @@ class MainViewController: UIViewController {
             case .success(let data):
                 if let response = data as? PhotoSingleResponse {
                     self.singlePhotoData = response
+                }
+            case .requestErr(let msg):
+                print(msg)
+            case .pathErr:
+                print("path Err")
+            case .serverErr:
+                print("server Err")
+            case .networkFail:
+                print("network Fail")
+            }
+        }
+    }
+    
+    func fetchPhotoColor(photoURL: String) {
+        PhotoColorPickService.shared.getPhotoColor(image_url: photoURL) { (result) -> (Void) in
+            switch result {
+            case .success(let data):
+                if let response = data as? ColorResponse {
+                    print("🔥 Color - \(response)")
                 }
             case .requestErr(let msg):
                 print(msg)
@@ -168,11 +186,13 @@ extension MainViewController: UISearchBarDelegate {
 
 extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        fetchSinglePhoto(photoID: photoData[indexPath.row].id)
+//        print(photoData[indexPath.row].urls.full)
+//        fetchPhotoColor(photoURL: photoData[indexPath.row].urls.full)
         let detailVC = DetailViewController(nibName: "DetailViewController", bundle: nil)
         if let url = URL(string: self.photoData[indexPath.row].urls.full) {
             detailVC.setData(url: url)
         }
+        detailVC.fullImageString = photoData[indexPath.row].urls.full
         detailVC.photoID = photoData[indexPath.row].id
 
         detailVC.modalPresentationStyle = .fullScreen

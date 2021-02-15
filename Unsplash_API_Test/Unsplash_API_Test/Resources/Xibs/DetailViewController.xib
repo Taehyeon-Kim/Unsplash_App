@@ -54,15 +54,28 @@
                                 <action selector="downloadButtonClicked:" destination="-1" eventType="touchUpInside" id="222-Bl-Lvb"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPa-Lf-gnW">
+                            <rect key="frame" x="314" y="4" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="6lJ-NV-BEG"/>
+                                <constraint firstAttribute="height" constant="36" id="MFt-qh-o3v"/>
+                            </constraints>
+                            <state key="normal" image="pallete"/>
+                            <connections>
+                                <action selector="colorButtonClicked:" destination="-1" eventType="touchUpInside" id="V4V-ap-bsY"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="Crc-xg-VV5" firstAttribute="leading" secondItem="JPa-Lf-gnW" secondAttribute="trailing" constant="14" id="0kk-O3-ajH"/>
                         <constraint firstItem="Crc-xg-VV5" firstAttribute="centerY" secondItem="ZPC-Bg-2De" secondAttribute="centerY" id="9Sp-5V-wA4"/>
                         <constraint firstItem="Crc-xg-VV5" firstAttribute="centerY" secondItem="ZPC-Bg-2De" secondAttribute="centerY" id="CMI-pP-H7m"/>
                         <constraint firstItem="2Bd-0v-BWf" firstAttribute="centerY" secondItem="ZPC-Bg-2De" secondAttribute="centerY" id="HQm-h0-94k"/>
                         <constraint firstAttribute="trailing" secondItem="Crc-xg-VV5" secondAttribute="trailing" constant="14" id="LHs-Pq-TOC"/>
                         <constraint firstAttribute="height" constant="44" id="SJC-Lu-gv4"/>
                         <constraint firstItem="2Bd-0v-BWf" firstAttribute="leading" secondItem="ZPC-Bg-2De" secondAttribute="leading" constant="14" id="W4m-nk-FLJ"/>
+                        <constraint firstItem="JPa-Lf-gnW" firstAttribute="centerY" secondItem="ZPC-Bg-2De" secondAttribute="centerY" id="jgv-5X-3aH"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다운로드 수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fs-kz-Udi">
@@ -111,6 +124,7 @@
     <resources>
         <image name="back_button" width="11" height="20"/>
         <image name="download" width="72" height="72"/>
+        <image name="pallete" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
