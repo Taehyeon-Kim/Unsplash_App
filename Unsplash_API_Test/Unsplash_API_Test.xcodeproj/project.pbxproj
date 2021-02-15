@@ -16,6 +16,7 @@
 		BD0D171A25DABE0A00544FDF /* PhotoColorCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D171825DABE0A00544FDF /* PhotoColorCVC.swift */; };
 		BD0D171B25DABE0A00544FDF /* PhotoColorCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD0D171925DABE0A00544FDF /* PhotoColorCVC.xib */; };
 		BD0D172325DABFAC00544FDF /* PhotoColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD0D172225DABFAC00544FDF /* PhotoColorViewController.xib */; };
+		BD0D172625DAD56000544FDF /* RGBColor + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D172525DAD56000544FDF /* RGBColor + UIColor.swift */; };
 		BD51F5F825D112C500493CB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51F5F725D112C500493CB5 /* AppDelegate.swift */; };
 		BD51F5FA25D112C500493CB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51F5F925D112C500493CB5 /* SceneDelegate.swift */; };
 		BD51F5FF25D112C500493CB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD51F5FD25D112C500493CB5 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		BD0D171825DABE0A00544FDF /* PhotoColorCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoColorCVC.swift; sourceTree = "<group>"; };
 		BD0D171925DABE0A00544FDF /* PhotoColorCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoColorCVC.xib; sourceTree = "<group>"; };
 		BD0D172225DABFAC00544FDF /* PhotoColorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoColorViewController.xib; sourceTree = "<group>"; };
+		BD0D172525DAD56000544FDF /* RGBColor + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RGBColor + UIColor.swift"; sourceTree = "<group>"; };
 		BD51F5F425D112C500493CB5 /* Unsplash_API_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unsplash_API_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD51F5F725D112C500493CB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD51F5F925D112C500493CB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				BDEB528C25D9571800F58FD9 /* DownloadImage + UIViewController.swift */,
+				BD0D172525DAD56000544FDF /* RGBColor + UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				BDD1095A25D97E5E00BED4CA /* TabBarController.swift in Sources */,
 				BDEB528D25D9571800F58FD9 /* DownloadImage + UIViewController.swift in Sources */,
 				BDF90D3F25D827610076793B /* LikedPhotoCVC.swift in Sources */,
+				BD0D172625DAD56000544FDF /* RGBColor + UIColor.swift in Sources */,
 				BD51F61625D127D200493CB5 /* MainViewController.swift in Sources */,
 				BDF90D1F25D801CC0076793B /* ProfileViewController.swift in Sources */,
 				BD0D16FD25DA8C0700544FDF /* PhotoRandomService.swift in Sources */,

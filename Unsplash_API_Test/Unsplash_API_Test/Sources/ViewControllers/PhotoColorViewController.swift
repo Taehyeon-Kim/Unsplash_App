@@ -13,10 +13,11 @@ class PhotoColorViewController: UIViewController {
     
     var photoURLString: String!
     var photoColors: [Color] = []
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print("😃 -- \(photoURLString)")
+
         setupCollectionView()
         fetchPhotoColor(photoURL: photoURLString)
         
@@ -27,7 +28,6 @@ class PhotoColorViewController: UIViewController {
             switch result {
             case .success(let data):
                 if let response = data as? ColorResponse {
-//                    print("🔥 Color - \(response)")
                     self.photoColors = response.result.colors.image_colors
                     self.colorCollectionView.reloadData()
                 }
@@ -103,14 +103,10 @@ extension PhotoColorViewController: UICollectionViewDataSource, UICollectionView
         
         cell.view.layer.cornerRadius = 14
         cell.view.backgroundColor = UIColor.rgb(red: r_val, green: g_val, blue: b_val)
-        cell.colorName.text = "\(colorName) (R:\(r_val)·G:\(g_val)·B:\(b_val))"
+        cell.colorName.text = "\(colorName)"
         
         return cell
     }
 }
 
-extension UIColor {
-    static func rgb(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
-        return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
-      }
-}
+
