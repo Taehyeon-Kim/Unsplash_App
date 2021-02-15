@@ -1,20 +1,36 @@
 PODS:
   - Alamofire (5.4.1)
+  - KakaoSDKAuth (2.3.2):
+    - KakaoSDKCommon (= 2.3.2)
+  - KakaoSDKCommon (2.3.2):
+    - Alamofire (~> 5.1)
+  - KakaoSDKUser (2.3.2):
+    - KakaoSDKAuth (= 2.3.2)
+    - KakaoSDKCommon (= 2.3.2)
   - Kingfisher (6.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
+  - KakaoSDKAuth
+  - KakaoSDKCommon
+  - KakaoSDKUser
   - Kingfisher (~> 6.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - KakaoSDKAuth
+    - KakaoSDKCommon
+    - KakaoSDKUser
     - Kingfisher
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  KakaoSDKAuth: 8db7c7a0561b137477bb984bbdab2eeda7745d23
+  KakaoSDKCommon: 4bb3981337921686948b7be094590f2edec5df87
+  KakaoSDKUser: e6c0017a41e87a94bdcd873d0178ad75be8126d4
   Kingfisher: f5d8d60a0ef3edd642fd781bae60918599901aff
 
-PODFILE CHECKSUM: 4e1d5a60a9a71f57ca5a273e9941c5290359611d
+PODFILE CHECKSUM: 51be643d342747005e53abf19f7f34d5ca0631e8
 
 COCOAPODS: 1.10.0

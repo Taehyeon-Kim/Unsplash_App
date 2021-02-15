@@ -19,6 +19,8 @@
 		BD51F62C25D13D6800493CB5 /* PhotoSearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51F62B25D13D6800493CB5 /* PhotoSearchData.swift */; };
 		BD51F62F25D13E4400493CB5 /* PhotoSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51F62E25D13E4400493CB5 /* PhotoSearchService.swift */; };
 		BD6B140A25D17A41001CE429 /* PhotoCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B140925D17A41001CE429 /* PhotoCVC.swift */; };
+		BDD1095425D9752C00BED4CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1095325D9752C00BED4CA /* LoginViewController.swift */; };
+		BDD1095A25D97E5E00BED4CA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1095925D97E5E00BED4CA /* TabBarController.swift */; };
 		BDEB528D25D9571800F58FD9 /* DownloadImage + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB528C25D9571800F58FD9 /* DownloadImage + UIViewController.swift */; };
 		BDF90D1F25D801CC0076793B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF90D1E25D801CC0076793B /* ProfileViewController.swift */; };
 		BDF90D2625D803650076793B /* UserProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF90D2525D803650076793B /* UserProfileData.swift */; };
@@ -50,6 +52,8 @@
 		BD51F62B25D13D6800493CB5 /* PhotoSearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchData.swift; sourceTree = "<group>"; };
 		BD51F62E25D13E4400493CB5 /* PhotoSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchService.swift; sourceTree = "<group>"; };
 		BD6B140925D17A41001CE429 /* PhotoCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCVC.swift; sourceTree = "<group>"; };
+		BDD1095325D9752C00BED4CA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BDD1095925D97E5E00BED4CA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		BDEB528C25D9571800F58FD9 /* DownloadImage + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DownloadImage + UIViewController.swift"; sourceTree = "<group>"; };
 		BDF90D1E25D801CC0076793B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BDF90D2525D803650076793B /* UserProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileData.swift; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 		BD51F61125D1273300493CB5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BDD1095325D9752C00BED4CA /* LoginViewController.swift */,
+				BDD1095925D97E5E00BED4CA /* TabBarController.swift */,
 				BD51F61525D127D200493CB5 /* MainViewController.swift */,
 				BDF90D4F25D8513A0076793B /* DetailViewController.swift */,
 				BDF90D1E25D801CC0076793B /* ProfileViewController.swift */,
@@ -368,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD1095425D9752C00BED4CA /* LoginViewController.swift in Sources */,
 				BDF90D4D25D8496D0076793B /* PhotoSingleService.swift in Sources */,
 				BD51F61925D12B5000493CB5 /* APIConstants.swift in Sources */,
 				BDF90D3C25D823950076793B /* UserLikedPhotoService.swift in Sources */,
@@ -377,6 +384,7 @@
 				BD51F61C25D131D900493CB5 /* NetworkResult.swift in Sources */,
 				BDF90D5025D8513A0076793B /* DetailViewController.swift in Sources */,
 				BDF90D2925D8047D0076793B /* UserInfoService.swift in Sources */,
+				BDD1095A25D97E5E00BED4CA /* TabBarController.swift in Sources */,
 				BDEB528D25D9571800F58FD9 /* DownloadImage + UIViewController.swift in Sources */,
 				BDF90D3F25D827610076793B /* LikedPhotoCVC.swift in Sources */,
 				BD51F61625D127D200493CB5 /* MainViewController.swift in Sources */,
@@ -532,6 +540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W895YM7ZMH;
 				INFOPLIST_FILE = Unsplash_API_Test/Info.plist;
@@ -540,8 +549,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.taekki.ios.Unsplash_API_Test;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.taekki.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -553,6 +563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W895YM7ZMH;
 				INFOPLIST_FILE = Unsplash_API_Test/Info.plist;
@@ -561,8 +572,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.taekki.ios.Unsplash_API_Test;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.taekki.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -19,8 +19,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        print("DetailVC - viewDidLoad()")
-        
+//        print("DetailVC - viewDidLoad()")
         fullImage.kf.setImage(with: fullImageURL)
     }
     
@@ -35,5 +34,6 @@ class DetailViewController: UIViewController {
     
     @IBAction func downloadButtonClicked(_ sender: Any) {
         downloadImage(url: self.fullImageURL!)
+        self.dismiss(animated: true, completion: nil)
     }
 }

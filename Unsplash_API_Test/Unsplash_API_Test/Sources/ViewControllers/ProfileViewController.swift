@@ -153,7 +153,7 @@ extension ProfileViewController {
 
 extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(self.userLikedPhotos.count)
+//        print(self.userLikedPhotos.count)
         self.totalLikes.text = String(self.userLikedPhotos.count)
         return self.userLikedPhotos.count
     }

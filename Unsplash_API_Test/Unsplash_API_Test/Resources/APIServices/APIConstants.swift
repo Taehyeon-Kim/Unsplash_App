@@ -17,7 +17,7 @@ struct APIConstants {
     // api-2: 사용자 공개 프로필
     static let userProfileURL = baseURL + "/users/:username?client_id={client_id}"
     
-    // api-3: 사용자 좋아요 사진 리스트
+    // api-3: 사용자 좋아요45 사진 리스트
     static let userLikedPhotoURL = baseURL + "/users/:username/likes?client_id={client_id}"
 
     // api-4: 단일 사진 가져오기 (photo-id로 검색)
