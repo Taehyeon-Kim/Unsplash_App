@@ -9,7 +9,20 @@
 
 ## 👨🏻‍💻 핵심 기능
 
-(화면 및 내용 준비중)
+✅ 메인 화면 사진 30장 랜덤 노출  
+✅ 사진 검색  
+✅ 사진 보기  
+✅ 사진 다운로드  
+✅ 사진 색상 추출  
+✅ Unsplash 프로필 로드  
+✅ 좋아요한 사진 리스트 확인  
+
+<img width="200" alt="스크린샷 2021-02-19 오후 3 35 17" src="https://user-images.githubusercontent.com/61109660/108467920-4bc31080-72c9-11eb-875b-138ba076cd34.png"><img width="200" alt="스크린샷 2021-02-19 오후 3 35 23" src="https://user-images.githubusercontent.com/61109660/108467929-51205b00-72c9-11eb-99ee-bb924ecffc61.png">
+<img width="200" alt="스크린샷 2021-02-19 오후 3 36 01" src="https://user-images.githubusercontent.com/61109660/108467938-5382b500-72c9-11eb-82be-f10596ba6882.png">
+<img width="200" alt="스크린샷 2021-02-19 오후 3 36 12" src="https://user-images.githubusercontent.com/61109660/108467949-57163c00-72c9-11eb-9d87-af72e27133e6.png">
+<img width="200" alt="스크린샷 2021-02-19 오후 3 36 25" src="https://user-images.githubusercontent.com/61109660/108467954-59789600-72c9-11eb-9a5f-265b6fdbdb4b.png">
+<img width="200" alt="스크린샷 2021-02-19 오후 3 36 57" src="https://user-images.githubusercontent.com/61109660/108467957-5c738680-72c9-11eb-9587-c2db47bbed50.png">
+<img width="200" alt="스크린샷 2021-02-19 오후 3 37 19" src="https://user-images.githubusercontent.com/61109660/108467967-5f6e7700-72c9-11eb-8ca3-a10e780e6fe3.png">
 
 <br><br>
 
